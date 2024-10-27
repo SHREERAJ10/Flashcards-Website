@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Afacad Flux", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure body takes full viewport height */
+}
+
+header {
+  /* margin-top:25px; */
+  font-size: 1.4rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#fileUpload {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.start-btn {
+  margin-left: -188px;
+}
+
+.section {
+  flex:1;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  
+}
+
+.flashcard-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.btn-section {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.flashcard {
+  width: 310px;
+  height: 400px;
+  font-size: 1.5em;
+  padding: 8px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px black;
+}
+
+.regular-btn,
+input::file-selector-button {
+  width: 10rem;
+  font-size: 1.3rem;
+  margin-top: 14px;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #003566;
+  color: white;
+}
+
+.regular-btn:hover,
+input::file-selector-button:hover {
+  cursor: pointer;
+  filter: brightness(120%);
+}
+
+/*footer*/
+.footer {
+  color: #353935;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+}
+.footer p {
+  font-size:1rem;
+  margin: 0;
+}

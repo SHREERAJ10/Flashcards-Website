@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <h1 align="center">Simple Flashcards</h1>
+            <h2>Master Anything, One Flashcard at a Time</h2>
+        </div>
+        <section class="hero-section">
+            <i class="fa-solid fa-brain design"></i>
+            <a href="practice-page.html" target="_blank">
+                <i class="fa-solid fa-pen-nib"></i>
+            </a>
+            <i class="fa-solid fa-book design"></i>
+        </section>
+        <div class="practice-btn">
+            <a href="practice-page.html" target="_blank">
+                <span>Practice</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="input-section">
+                <div class="question">
+                    <label for="question">Question: </label>
+                    <input type="text" id="question-field">
+                </div>
+                <div class="answer">
+                    <label for="answer">Answer: </label>
+                    <input type="text" id="answer-field">
+                </div>
+                <div class="btn">
+                    <a href="#flashcards-section">
+                        <button class="regular-btn" id="create-btn">Create Flashcard</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="flashcards-section" id="flashcards-section">
+            <div class="flashcard" id="qsn">
+                Question...
+            </div>
+            <div class="flashcard" id="ans">
+                Answer...
+            </div> 
+        </div>
+        <div class="btn">
+            <a id="downloadLink"><button class="regular-btn" id="save-btn">Save</button></a>
+            <button class="regular-btn" id="next-btn">Next</button>
+        </div>
+    </main>
+    <div class="footer">
+        <p>&copy; <span id="year"></span> Shreeraj Shrestha. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

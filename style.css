@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+header{
+    font-size:1.4rem;
+    font-family: "Poppins", sans-serif;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:32px;
+    width:100%;
+}
+
+.practice-btn span{
+    font-size:2rem;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+.practice-btn span:hover{
+    cursor:pointer;
+    text-decoration:underline;
+}
+
+main{
+    margin-bottom:10px;
+}
+
+.hero-section{
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    font-size:12rem;
+}
+
+main section{
+    display:flex;
+    justify-content:center;
+    border:1px solid black;
+}
+
+.input-section div label{
+    display:inline-block;
+    width:100px;
+    cursor:pointer;
+    font-size:1.6rem;
+}
+
+.input-section div input{
+    height:50%;
+    border-radius:12px;
+    padding:8px;
+    font-size:1.4rem;
+    background-color: #EEEEEE;
+    width: 100%;
+}
+.input-section div{
+    margin-top:16px;
+}
+
+.input-section{
+    padding:8px;
+    width:70%;
+}
+
+.btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+}
+
+.regular-btn{
+    width:10rem;
+    font-size:1.3rem;
+    margin-top:14px;
+    padding:8px;
+    border:1px solid black;
+    border-radius:10px;
+    background-color:#003566;
+    color:white;
+}
+
+.regular-btn:hover{
+    cursor:pointer;
+    filter: brightness(120%);
+}
+
+.flashcards-section{
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:35px;
+    flex-wrap:wrap;
+}
+
+.flashcard{
+    width:310px;
+    height:400px;
+    font-size:1.5em;
+    padding:8px;
+    background-color:white;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border:1px solid black;
+    box-shadow:5px 5px 5px black;
+}
+
+.hero-section div{
+    display:flex;
+    flex-direction:column;
+    
+}
+.hero-section div span{
+    font-size:1.2rem;
+}
+
+/*footer*/
+.footer {
+    margin-top:30px;
+    color: #353935;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+.footer p {
+    font-size:1rem;
+    margin: 0;
+}
+
+@media only screen and (max-width:640px){
+    .hero-section .design{
+        display:none;
+    }
+}
